@@ -13,8 +13,8 @@ import PattenAnalysisTool as pat
 
 # Load data
 # time[0], pos(3)[1~3], ori(4)[4~7], force[8], pos(3)[9-11], ori(4)[12-15], force[16], pressure(2258)[17~]
-# loadname = 'ID014_filtered_MAF_pos_ori3'
-loadname = 'ID020_filtered_MAF_pos3'
+#loadname = 'ID011_filtered_MAF_pos_ori10'
+loadname = 'ID024_filtered_MAF_pos3'
 dataSet = pd.read_csv('../../Data/study/' + loadname + '.csv').to_numpy()
 
 print(dataSet.shape)
@@ -88,7 +88,7 @@ drawfrom = 0
 # if the number of repetition is more than the below number, then the repeated sequence is considered as a pattern
 pattern_filter = 2
 # if two patterns share more than the below dup_rate, then the patterns are merged
-dup_rate = 0.8
+dup_rate = 0.7
 
 # sequence variables
 startIdx = 0
@@ -273,7 +273,7 @@ if drawPatternResult:
 if drawForcePattern:
 
     for i in range(len(matchedArray)):
-        fig = plt.figure(figsize=(10,5))
+        fig = plt.figure(figsize=(11, 5))
 
         pat.draw2ForcePatternInTime(fig, matchedArray[i], startIdxList, endIdxList, time, twoForces)
 

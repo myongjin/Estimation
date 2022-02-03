@@ -463,6 +463,7 @@ def draw6DPatternPlaneLimited(fig, idx, matchedArray, startIdxList, endIdxList, 
 
 
     axes[0].grid()
+    axes[0].set_title('Left index')
     axes[0].set_xlabel('Z Position (mm)')
     axes[0].set_ylabel('X Position (mm)')
     axes[0].set_xlim(_xlim)
@@ -470,6 +471,7 @@ def draw6DPatternPlaneLimited(fig, idx, matchedArray, startIdxList, endIdxList, 
     axes[0].invert_yaxis()
 
     axes[1].grid()
+    axes[1].set_title('Right index')
     axes[1].set_xlabel('Z Position (mm)')
     axes[1].set_ylabel('X Position (mm)')
     axes[1].set_xlim(_xlim)
@@ -514,12 +516,12 @@ def draw2ForcePatternInTime(fig, seqList, startIdxList, endIdxList, totalTime, t
     axes = fig.subplots(nrows=1, ncols=2)
 
     axes[0].grid()
-    axes[0].set_title('Left index force')
+    axes[0].set_title('Left index')
     axes[0].set_xlabel('Time (s)')
     axes[0].set_ylabel('Force (N)')
 
     axes[1].grid()
-    axes[1].set_title('Right index force')
+    axes[1].set_title('Right index')
     axes[1].set_xlabel('Time (s)')
     axes[1].set_ylabel('Force (N)')
 
