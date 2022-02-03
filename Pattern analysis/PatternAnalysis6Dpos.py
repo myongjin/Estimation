@@ -151,8 +151,9 @@ if do_analysis:
         match = 0
         # compare i sequence with other
         for j in range(total_nbSequence):
+            # check if sequence j is already in the list or not
             if i != j:
-                # check if sequence j is already in the list or not
+                # check if sequence j is overlapped with a sequence in the list
                 overlapping = False
                 for k in matchedIdx:
                     if pat.checkOverlapping([startIdxList[k], endIdxList[k]],[startIdxList[j], endIdxList[j]],l_min/4):
@@ -186,6 +187,7 @@ if not do_analysis:
     startIdxList = loadedData['startIdxList']
     endIdxList = loadedData['endIdxList']
 
+#filtering
 
 
 # rearrange a pattern list in order of the number of repetition
