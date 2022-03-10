@@ -19,15 +19,15 @@ dataSet = pd.read_csv('../../Data/study/' + loadname + '.csv').to_numpy()
 
 print(dataSet.shape)
 
-#앞 뒤 잘라내기
+#cut off the beginning and end part
 cutStart = 0
 cutEnd = -1
 dataSet = dataSet[cutStart:cutEnd, :]
 
 # generate several dataset
-time = dataSet[:,0]
-firstPos = dataSet[:,1:4]
-secondPos = dataSet[:,9:12]
+time = dataSet[:, 0]
+firstPos = dataSet[:, 1:4]
+secondPos = dataSet[:, 9:12]
 
 twoPos = np.concatenate([firstPos, secondPos], axis =1)
 print(twoPos.shape)
@@ -41,7 +41,7 @@ twoForces = np.column_stack([firstForce, secondForce])
 print(twoForces.shape)
 
 
-# 데이터 세워서 합치기
+# Combine dataset
 testdata = twoPos
 print([min(testdata[:, 0]), max(testdata[:, 0])])
 print([min(testdata[:, 2]), max(testdata[:, 2])])
@@ -117,7 +117,7 @@ if do_analysis:
                 startIdx += round(l_Sequence*(3/4))
 
 
-            # 생성된 시퀀스 그리기
+            # Draw generated sequences
             if drawGeneratedSequence:
                 for j in range(testdata.shape[1]):
                     plt.figure(fig_Idx)

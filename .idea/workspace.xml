@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f96d4fe2-8690-462b-9de5-469993a5a322" name="Default Changelist" comment="" />
+    <list default="true" id="f96d4fe2-8690-462b-9de5-469993a5a322" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pattern analysis/PatternAnalysis6Dpos.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern analysis/PatternAnalysis6Dpos.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +17,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1kh2kDzB7sux1KmZtFQ2vY0IvQC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -21,10 +30,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -206,54 +216,45 @@
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="618" height="189" key="GridCell.Tab.0.bottom" timestamp="1643865332243">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="618" height="189" key="GridCell.Tab.0.bottom/0.0.1280.760/1280.-349.1200.1880@0.0.1280.760" timestamp="1643865332243" />
-    <state width="1899" height="329" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.-349.1200.1880@0.0.1920.1160" timestamp="1643783529838" />
-    <state width="1899" height="329" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1641408933044" />
-    <state width="618" height="189" key="GridCell.Tab.0.center" timestamp="1643865332243">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="618" height="189" key="GridCell.Tab.0.center/0.0.1280.760/1280.-349.1200.1880@0.0.1280.760" timestamp="1643865332243" />
-    <state width="1899" height="329" key="GridCell.Tab.0.center/0.0.1920.1160/1920.-349.1200.1880@0.0.1920.1160" timestamp="1643783529838" />
-    <state width="1899" height="329" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1641408933044" />
-    <state width="618" height="189" key="GridCell.Tab.0.left" timestamp="1643865332243">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="618" height="189" key="GridCell.Tab.0.left/0.0.1280.760/1280.-349.1200.1880@0.0.1280.760" timestamp="1643865332243" />
-    <state width="1899" height="329" key="GridCell.Tab.0.left/0.0.1920.1160/1920.-349.1200.1880@0.0.1920.1160" timestamp="1643783529837" />
-    <state width="1899" height="329" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1641408933044" />
-    <state width="618" height="189" key="GridCell.Tab.0.right" timestamp="1643865332243">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="618" height="189" key="GridCell.Tab.0.right/0.0.1280.760/1280.-349.1200.1880@0.0.1280.760" timestamp="1643865332243" />
-    <state width="1899" height="329" key="GridCell.Tab.0.right/0.0.1920.1160/1920.-349.1200.1880@0.0.1920.1160" timestamp="1643783529838" />
-    <state width="1899" height="329" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1641408933044" />
-    <state width="1899" height="396" key="GridCell.Tab.1.bottom" timestamp="1637681201711">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1899" height="396" key="GridCell.Tab.1.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1637681201711" />
-    <state width="1899" height="396" key="GridCell.Tab.1.center" timestamp="1637681201710">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1899" height="396" key="GridCell.Tab.1.center/0.0.1920.1160@0.0.1920.1160" timestamp="1637681201710" />
-    <state width="1899" height="396" key="GridCell.Tab.1.left" timestamp="1637681201710">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1899" height="396" key="GridCell.Tab.1.left/0.0.1920.1160@0.0.1920.1160" timestamp="1637681201710" />
-    <state width="1899" height="396" key="GridCell.Tab.1.right" timestamp="1637681201710">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1899" height="396" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1637681201710" />
-    <state x="984" y="0" width="943" height="1167" key="dock-window-1" timestamp="1639330477793">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="984" y="0" width="943" height="1167" key="dock-window-1/0.0.1920.1160@0.0.1920.1160" timestamp="1639330477793" />
-    <state x="1103" y="260" width="672" height="678" key="search.everywhere.popup" timestamp="1639074194821">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="1103" y="260" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1639074194821" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="c3454d85-3489-448f-82c4-96d4d6d4cd75">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="c3454d85-3489-448f-82c4-96d4d6d4cd75" value="TOOL_WINDOW" />
+      </map>
+    </option>
   </component>
 </project>
