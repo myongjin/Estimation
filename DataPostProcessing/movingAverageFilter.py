@@ -22,7 +22,7 @@ def movingAverage1D(data, size):
 
 
 # Load data
-file_name = 'ID024_filtered'
+file_name = 'ID019_2_filtered'
 load_name = '../../Data/study/' + file_name + '.csv'
 
 

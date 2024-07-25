@@ -39,8 +39,8 @@ def minMax2DArray(array):
 # train_file_name = '../Data/train 01-09-2021 15-47_filtered.csv'
 # train 01-09-2021 15-51_filtered
 
-file_name = 'ID024'
-load_name = '../../Data/study/original/' + file_name + '.csv'
+file_name = 'ID024_2'
+load_name = '../../Data/study/Second_trials/' + file_name + '.csv'
 # load_name = '../../Data/Jennifer_pos_force.csv'
 filterForce = 3.8
 filterDiffForce = 50

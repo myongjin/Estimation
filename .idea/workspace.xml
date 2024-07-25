@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f96d4fe2-8690-462b-9de5-469993a5a322" name="Default Changelist" comment="">
+    <list default="true" id="f96d4fe2-8690-462b-9de5-469993a5a322" name="Default Changelist" comment="Add a function to analyse all files at a time">
+      <change afterPath="$PROJECT_DIR$/Pattern analysis/AIAnalysis/AIAnalysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pattern analysis/AIAnalysis/DisplayResult.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pattern analysis/AIAnalysis/GenerateSequences.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pattern analysis/AIAnalysis/PointNetAnalysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pattern analysis/AIAnalysis/PointNetAnalysis2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pattern analysis/AIAnalysis/PointNetAutoUnet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pattern analysis/AIAnalysis/Volxelization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pattern analysis/AIAnalysis/VoxelAIAnalysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pattern analysis/AIAnalysis/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pattern analysis/AIAnalysis/autoencoder_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pattern analysis/PatternAnalysis6Dpos_all_participants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pattern analysis/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataPostProcessing/Low_pass_filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataPostProcessing/Low_pass_filter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataPostProcessing/ReadAndPlot.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataPostProcessing/ReadAndPlot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataPostProcessing/movingAverageFilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataPostProcessing/movingAverageFilter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pattern analysis/ID010_filtered_MAF_pos3_pattern.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern analysis/ID010_filtered_MAF_pos3_pattern.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pattern analysis/ID014_filtered_MAF_pos3_pattern.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern analysis/ID014_filtered_MAF_pos3_pattern.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pattern analysis/ID015_filtered_MAF_pos3_pattern.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern analysis/ID015_filtered_MAF_pos3_pattern.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pattern analysis/ID016_filtered_MAF_pos3_pattern.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern analysis/ID016_filtered_MAF_pos3_pattern.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pattern analysis/ID018_filtered_MAF_pos3_pattern.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern analysis/ID018_filtered_MAF_pos3_pattern.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pattern analysis/ID019_filtered_MAF_pos3_pattern.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern analysis/ID019_filtered_MAF_pos3_pattern.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pattern analysis/ID020_filtered_MAF_pos3_pattern.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern analysis/ID020_filtered_MAF_pos3_pattern.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pattern analysis/ID024_filtered_MAF_pos3_pattern.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern analysis/ID024_filtered_MAF_pos3_pattern.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pattern analysis/PattenAnalysisTool.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern analysis/PattenAnalysisTool.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pattern analysis/PatternAnalysis6Dpos.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern analysis/PatternAnalysis6Dpos.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,23 +57,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Pattern analysis/AIAnalysis" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Myeongjin\BreastPython\python code\Estimation\DataPostProcessing" />
-      <recent name="E:\Myeongjin\BreastPython\python code\Estimation\DataCheck" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\Estimation\Pattern analysis\AIAnalysis" />
+      <recent name="E:\Projects\Estimation\Pattern analysis" />
       <recent name="E:\Myeongjin\BreastPython\python code\Estimation" />
       <recent name="E:\Myeongjin\BreastPython\python code\Estimation\Pattern analysis" />
       <recent name="C:\Users\Admin\OneDrive - Imperial College London\Breast examination project\python code\Estimation" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\Estimation\Pattern analysis" />
+      <recent name="E:\Myeongjin\BreastPython\python code\Estimation\DataPostProcessing" />
+      <recent name="E:\Myeongjin\BreastPython\python code\Estimation\DataCheck" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.PatternAnalysis6Dpos">
-    <configuration name="PattenAnalysisTool" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.PointNetAnalysis2">
+    <configuration name="GenerateSequences" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Estimation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -57,11 +84,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pattern analysis" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pattern analysis/AIAnalysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pattern analysis/PattenAnalysisTool.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pattern analysis/AIAnalysis/GenerateSequences.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -70,7 +97,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PatternAnalysis6Dpos" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="PointNetAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Estimation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -78,11 +105,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pattern analysis" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pattern analysis/AIAnalysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pattern analysis/PatternAnalysis6Dpos.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pattern analysis/AIAnalysis/PointNetAnalysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PointNetAnalysis2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Estimation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pattern analysis/AIAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pattern analysis/AIAnalysis/PointNetAnalysis2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -112,7 +160,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ReadAndPlot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Volxelization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Estimation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,11 +168,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataPostProcessing" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pattern analysis/AIAnalysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataPostProcessing/ReadAndPlot.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pattern analysis/AIAnalysis/Volxelization.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -133,7 +181,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="StatisticalAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="VoxelAIAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Estimation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -141,11 +189,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pattern analysis" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pattern analysis/AIAnalysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pattern analysis/StatisticalAnalysis.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pattern analysis/AIAnalysis/VoxelAIAnalysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,34 +223,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="movingAverageFilter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Estimation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataPostProcessing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataPostProcessing/movingAverageFilter.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.PatternAnalysis6Dpos" />
-        <item itemvalue="Python.StatisticalAnalysis" />
-        <item itemvalue="Python.movingAverageFilter" />
-        <item itemvalue="Python.ReadAndPlot" />
-        <item itemvalue="Python.PattenAnalysisTool" />
+        <item itemvalue="Python.PointNetAnalysis2" />
+        <item itemvalue="Python.PointNetAnalysis" />
+        <item itemvalue="Python.VoxelAIAnalysis" />
+        <item itemvalue="Python.Volxelization" />
+        <item itemvalue="Python.GenerateSequences" />
       </list>
     </recent_temporary>
   </component>
@@ -215,6 +242,14 @@
       <option name="presentableId" value="Default" />
       <updated>1606138643180</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add a function to analyse all files at a time">
+      <created>1648444075688</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648444075688</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,5 +292,20 @@
         <entry key="c3454d85-3489-448f-82c4-96d4d6d4cd75" value="TOOL_WINDOW" />
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add a function to analyse all files at a time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a function to analyse all files at a time" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Pattern analysis/Preprocessing.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

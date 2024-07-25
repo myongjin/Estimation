@@ -5,9 +5,38 @@ import pandas as pd
 import math
 from matplotlib import pyplot as plt
 import matplotlib.patches as patches
+import matplotlib.colors as mcolors
+import pickle
+
 import random
 
 
+# PatternAnalysisTool.py
+
+def save_sequences(sequences, file_path):
+    with open(file_path, 'wb') as file:
+        pickle.dump(sequences, file)
+    print(f"Sequences saved to {file_path}")
+
+def load_sequences(file_path):
+    with open(file_path, 'rb') as file:
+        sequences = pickle.load(file)
+    print(f"Sequences loaded from {file_path}")
+    return sequences
+
+def example_function():
+    print("This is an example function from PatternAnalysisTool")
+
+
+class ExampleClass:
+    def __init__(self, value):
+        self.value = value
+
+    def show_value(self):
+        print(f"The value is {self.value}")
+
+
+example_variable = "This is an example variable"
 def computeDTW(sequenceA, sequenceB):
     # sequence A should be shorter than B
     n = len(sequenceA) # n행 1열
@@ -135,6 +164,7 @@ def computeDTWAvgDis(sequenceA, sequenceB):
 
     return computeAvgDistance(convertedA, convertedB)
 
+# generate sequences starting from zero by subtracting the beginning value
 def generateSequence(startIdx, length, data):
     output = []
     for i in range(0,length):
@@ -495,6 +525,112 @@ def draw6DPatternPlaneLimited(fig, idx, matchedArray, startIdxList, endIdxList, 
     avgDepth /= len(seqList)
     avgDepth = round(avgDepth, 2)
 
+    plt.suptitle("Pattern Index: " + str(idx) + ", The number of repetition: "+ str(len(seqList)))
+
+def draw6DPatternPlaneLimitedforAllParticipant(fig, idx, matchedArray, startIdxList, endIdxList, seqIdList, alltestdata, _xlim, _ylim):
+    seqList = matchedArray[idx]
+
+    #color code for each participant
+    colorCode = ['tab:blue', 'tab:orange', 'tab:green', 'tab:red', 'tab:purple',
+                 'tab:brown', 'tab:pink', 'tab:gray', 'tab:olive', 'tab:cyan',
+                 'b', 'black', 'lime', 'deeppink', 'tomato',
+                 'aqua', 'deepskyblue', 'palegreen', 'brown', 'gold',
+                 'stategrey', 'rosybrown', 'crimeson', 'indigo', 'tan']
+
+
+    # x-z 평면에서 패턴 보기
+
+    axes = fig.subplots(nrows = 1, ncols = 2)
+
+
+
+    axes[0].grid()
+    axes[0].set_title('Left index')
+    axes[0].set_xlabel('Z Position (mm)')
+    axes[0].set_ylabel('X Position (mm)')
+    axes[0].set_xlim(_xlim)
+    axes[0].set_ylim(_ylim)
+    axes[0].invert_yaxis()
+
+    axes[1].grid()
+    axes[1].set_title('Right index')
+    axes[1].set_xlabel('Z Position (mm)')
+    axes[1].set_ylabel('X Position (mm)')
+    axes[1].set_xlim(_xlim)
+    axes[1].set_ylim(_ylim)
+    axes[1].invert_yaxis()
+
+    avgDepth = 0
+    for i in range(len(seqList)):
+        # 그리려고 하는 시퀀스가 속한 participant id를 참조해서 해당 data 가져옴
+        testdata = alltestdata[seqIdList[seqList[i]]]
+        x = getSequencefromIdx(seqList[i], startIdxList, endIdxList, testdata[:, 0])
+        z = getSequencefromIdx(seqList[i], startIdxList, endIdxList, testdata[:, 2])
+        _y = getSequencefromIdx(seqList[i], startIdxList, endIdxList, testdata[:, 1])
+        depth = max(_y) - min(_y)
+        avgDepth += depth
+        axes[0].plot(z, x, color=colorCode[seqIdList[seqList[i]]])
+
+        x = getSequencefromIdx(seqList[i], startIdxList, endIdxList, testdata[:, 3])
+        z = getSequencefromIdx(seqList[i], startIdxList, endIdxList, testdata[:, 5])
+        axes[1].plot(z, x, color=colorCode[seqIdList[seqList[i]]])
+
+    avgDepth /= len(seqList)
+    avgDepth = round(avgDepth, 2)
+
+    plt.suptitle("Pattern Index: " + str(idx) + ", The number of repetition: "+ str(len(seqList)))
+
+def draw3DPatternPlaneLimitedforAllParticipant(fig, idx, matchedArray, startIdxList, endIdxList, seqIdList, idList, alltestdata, _xlim, _ylim):
+    seqList = matchedArray[idx]
+
+    #color code for each participant
+    colorCode = ['tab:blue', 'tab:orange', 'tab:green', 'tab:red', 'tab:purple',
+                 'tab:brown', 'tab:pink', 'tab:gray', 'tab:olive', 'tab:cyan',
+                 'b', 'black', 'lime', 'deeppink', 'tomato',
+                 'aqua', 'deepskyblue', 'palegreen', 'brown', 'gold',
+                 'stategrey', 'rosybrown', 'crimeson', 'indigo', 'tan']
+
+
+    # x-z 평면에서 패턴 보기
+
+    ax = fig.gca()
+    ax.grid()
+
+    ax.set_xlabel('Z Position (mm)')
+    ax.set_ylabel('X Position (mm)')
+
+    ax.set_xlim(_xlim)
+    ax.set_ylim(_ylim)
+
+    ax.invert_yaxis()
+
+    avgDepth = 0
+    drawnBefore = []
+    for i in range(len(seqList)):
+        # 그리려고 하는 시퀀스가 속한 participant id를 참조해서 해당 data 가져옴
+        pId = seqIdList[seqList[i]]
+        testdata = alltestdata[pId]
+        x = getSequencefromIdx(seqList[i], startIdxList, endIdxList, testdata[:, 0])
+        z = getSequencefromIdx(seqList[i], startIdxList, endIdxList, testdata[:, 2])
+        _y = getSequencefromIdx(seqList[i], startIdxList, endIdxList, testdata[:, 1])
+        depth = max(_y) - min(_y)
+        avgDepth += depth
+
+        labelIncluded = False
+        for j in range(len(drawnBefore)):
+            if drawnBefore[j] == idList[pId]:
+                labelIncluded = True
+                break
+
+        if labelIncluded:
+            ax.plot(z, x, color=colorCode[pId])
+        else:
+            drawnBefore.append(idList[pId])
+            ax.plot(z, x, color=colorCode[pId], label=idList[pId])
+
+    avgDepth /= len(seqList)
+    avgDepth = round(avgDepth, 2)
+    plt.legend()
     plt.suptitle("Pattern Index: " + str(idx) + ", The number of repetition: "+ str(len(seqList)))
 
 def draw1DPatternInTime(fig, seqList, startIdxList, endIdxList, totalTime, targetData):

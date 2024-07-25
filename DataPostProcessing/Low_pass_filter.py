@@ -22,7 +22,7 @@ def butter_lowpass_filter(data, cutoff, fs, order=5):
     return y
 
 # Load data
-file_name = 'ID002_filtered'
+file_name = 'ID013_2_filtered'
 load_name = '../../Data/study/' + file_name + '.csv'
 save_name = '../../Data/study/' + file_name + '_LPF.csv'
 

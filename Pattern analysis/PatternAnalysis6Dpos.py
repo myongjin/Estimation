@@ -4,12 +4,8 @@ from matplotlib import pyplot as plt
 import PattenAnalysisTool as pat
 
 
-
-
-
-
 # the most recent version of pattern analysis program
-# the input is 6dof position data
+# the input is 6 dof position data
 # draw and save data
 
 # updated on 02/02/2022
@@ -52,8 +48,11 @@ dup_rate = 0.7
 
 # repeat from here to the end
 if analyseAllData:
-    idList = ['005', '006', '007', '008', '009', '010', '011', '014', '015', '016', '018', '019', '020',
-                '024']
+    #'005', '006', '007',
+    # idList = ['016', '018', '019', '020', '024']
+
+    # second trials
+    idList = ['014_2', '015_2', '017_2', '018_2', '020_2', '024_2', '016_2', '019_2']
 else:
     idList = ['002']
 
